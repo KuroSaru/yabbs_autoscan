@@ -166,7 +166,7 @@ export async function main(ns)
                         await ns.hack( SelfStats.Name );
                     }
 
-                    output = `🔶 <a style ="color:white"> ${ SelfStats.Name } :: Grown/Weakened or Hacked </a> </br>`;
+                    output = `🔶 ${ SelfStats.Name } :: Grown/Weakened or Hacked`;
                     ns.printf(output);
                     //printToTerm( output );
                 }
@@ -176,13 +176,13 @@ export async function main(ns)
                     {
                         OpenPorts( ns, SelfStats.Name, SelfStats.NukePorts );
                         await ns.nuke( SelfStats.Name );
-                        output = `✅ <a style ="color:white"> ${ SelfStats.Name } :: Ports Opened & Rooted </a> </br>`;
+                        output = `✅ ${ SelfStats.Name } :: Ports Opened & Rooted`;
                         ns.printf(output);
                         //printToTerm( output );
                     }
                     else
                     {
-                        output = `❌ <a style ="color:white"> ${ SelfStats.Name } :: Unable to Open Ports </a> </br>`;
+                        output = `❌ ${ SelfStats.Name } :: Unable to Open Ports`;
                         ns.printf(output);
                         //printToTerm( output );
                     }
